@@ -40,7 +40,7 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
               </p:NodeReference>
-              <Pin Id="Ne0bq0W5GttOHwafeHMKUg" Name="Force" Kind="InputPin" />
+              <Pin Id="Ne0bq0W5GttOHwafeHMKUg" Name="Force" Kind="InputPin" DefaultValue="True" />
               <Pin Id="HeoN51O4CACNVYWQGPXlTo" Name="Dispose Cached Outputs" Kind="InputPin" />
               <Pin Id="Afd0ohJYVNdPt1U9xgBGgm" Name="Has Changed" Kind="OutputPin" />
               <Patch Id="NEFC5f5yHwrPw3IuI7wQF8" ManuallySortedPins="true">
@@ -468,7 +468,7 @@
             <Pin Id="RJfoX5IHdk4L3kRrCGrnYX" Name="Y" Kind="InputPin" />
             <Pin Id="UUN7nu0P52BPorVnIlPnVn" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="OZZCn2Bfj4MLDmeOsNkBXL" Comment="" Bounds="968,742,35,28" ShowValueBox="true" isIOBox="true" Value="-0.5, 0.5">
+          <Pad Id="OZZCn2Bfj4MLDmeOsNkBXL" Comment="" Bounds="968,742,35,28" ShowValueBox="true" isIOBox="true" Value="-1, 1">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>

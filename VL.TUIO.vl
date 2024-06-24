@@ -2179,7 +2179,7 @@
               <Pin Id="JnXEPzou6kxLMRO2Hu0vSZ" Name="Angle" Kind="OutputPin" />
               <Pin Id="M27FlxIGYlCPlKI3A379zJ" Name="Data" Kind="OutputPin" />
             </Node>
-            <Pad Id="CLr8zNp40e9PwgDR5XbTQc" Comment="Position" Bounds="672,485,35,28" ShowValueBox="true" isIOBox="true" Value="1, 0">
+            <Pad Id="CLr8zNp40e9PwgDR5XbTQc" Comment="Position" Bounds="672,485,35,28" ShowValueBox="true" isIOBox="true" Value="0.8, 0">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Vector2" />
               </p:TypeAnnotation>
@@ -2259,7 +2259,7 @@
               <Pin Id="V5pwgkIIWJJLyMr1nwcDaK" Name="Input" Kind="InputPin" />
               <Pin Id="QJEHtRASIhWL3XACgLCIep" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="LBeKAdMu7PPObQnkMk6TF2" Comment="" Bounds="890,380,42,15" ShowValueBox="true" isIOBox="true" Value="Area: ">
+            <Pad Id="LBeKAdMu7PPObQnkMk6TF2" Comment="" Bounds="890,380,42,15" ShowValueBox="true" isIOBox="true" Value="Size: ">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>

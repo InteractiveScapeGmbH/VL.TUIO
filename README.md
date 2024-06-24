@@ -21,7 +21,7 @@ over:
 
 ## Scape X Mobile
 
-- scan the QR-Code which leads you to our [test-webapp](InteractiveScapeGmbH.github.io) for Scape X Mobile.
+- scan the QR-Code which leads you to our [test-webapp](https://interactivescapegmbh.github.io) for Scape X Mobile.
 - Press `Test Room`. (accept access to your gyroscope if asked)
 - Put your phone on the table. It should get a unique id.
 

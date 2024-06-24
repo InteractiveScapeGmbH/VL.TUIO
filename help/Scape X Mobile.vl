@@ -243,13 +243,13 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="HT9AC1MWnPaLhyNqpJ5Lo7" Name="Bounds" Kind="InputPin" DefaultValue="2600, 211, 1395, 945" IsHidden="true" />
+            <Pin Id="HT9AC1MWnPaLhyNqpJ5Lo7" Name="Bounds" Kind="InputPin" DefaultValue="941, 114, 1616, 940" IsHidden="true" />
             <Pin Id="NoyswmeVrp4LDdwcecatUQ" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="AII6iRcBHdOOwVwgCCb69G" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="MLT9C08asZeO33SdFrbGVa" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="CJXS6n0973MPIxD7BDr7dH" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="KXR385As8NyNg3gKCcIsYK" Name="Input" Kind="InputPin" />
-            <Pin Id="LNFU0BoYo1yNk7jSy3Fh3U" Name="Color" Kind="InputPin" />
+            <Pin Id="LNFU0BoYo1yNk7jSy3Fh3U" Name="Color" Kind="InputPin" DefaultValue="0.24999999, 0.24999999, 0.24999999, 1" />
             <Pin Id="GNlmuGQiywtLGfvW1hfRIB" Name="Clear" Kind="InputPin" />
             <Pin Id="S9zowPYw2mXLh5PI4IXLan" Name="Space" Kind="InputPin" />
             <Pin Id="FzEqI47SYLjOxSCUvRwY5r" Name="Show Cursor" Kind="InputPin" />

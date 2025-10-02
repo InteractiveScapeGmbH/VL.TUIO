@@ -8,7 +8,7 @@
     ************************ TuioSession ************************
 
 -->
-      <Node Name="TuioSession" Bounds="-307,180" Id="Nuxrfrkld1NO5iffVbAQHH">
+      <Node Name="TuioSession" Bounds="-406,180" Id="Nuxrfrkld1NO5iffVbAQHH">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -2895,7 +2895,7 @@
     ************************ OnRefresh ************************
 
 -->
-      <Node Name="OnRefresh" Bounds="-300,230" Id="CsVUbASBA3gP4aWAWr6gYn">
+      <Node Name="OnRefresh" Bounds="-399,230" Id="CsVUbASBA3gP4aWAWr6gYn">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -3752,11 +3752,6 @@
             <Pin Id="GqHuVoEsCM0LBnwcwWkQJH" Name="Updated" Kind="OutputPin" />
             <Pin Id="QbrDrHFYLAxLkZLROzXrO8" Name="Removed" Kind="OutputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="UoadYig4809Omagy9izZ8R">
             <Fragment Id="ATco4BG9NwXNpKTZjDP4zx" Patch="LKBuzujFgPfLDFLJTrJgdG" Enabled="true" />
             <Fragment Id="O5BA7hBp0IiOWQa6jAS1Hc" Patch="Impdba5UZQMPRCbQJgikvl" Enabled="true" />
@@ -4857,7 +4852,389 @@
           <Link Id="SCSJYEVeuZaOBIbVDJrJhK" Ids="JkS0fWYgPfPOtHOyobFTec,S1DZQO5Wx5RO7p8GlajRJM" />
         </Patch>
       </Node>
-      <Overlay Id="MBe8REv9ywWLFHJyaBStBZ" Name="Common" Bounds="-331,110,216,140" />
+      <Overlay Id="MBe8REv9ywWLFHJyaBStBZ" Name="Common" Bounds="-430,110,313,230" />
+      <!--
+
+    ************************ TuioServer ************************
+
+-->
+      <Node Name="TuioServer" Bounds="-445,480" Id="EAvvH1FJSqpQCQCh34W8mK">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" />
+        </p:NodeReference>
+        <Patch Id="NewuTgktG4NK90E02O1NIo">
+          <Canvas Id="KcvvhaeGoByOIZ2EdsshQ5" CanvasType="Group">
+            <Node Bounds="470,339,293,217" Id="PXtzdDO7YGFMSdPPthVkqz">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+              </p:NodeReference>
+              <Pin Id="TtNYDZuZpo6N2Ccynxiv9d" Name="Force" Kind="InputPin" />
+              <Pin Id="U9QgLlL4LUwPo89cFswz6Q" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="RXeW6v8ULmiNcLRJve5WtX" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="Bi32Jrnl1ywPCaCNrsxL3q" ManuallySortedPins="true">
+                <Patch Id="RJ6KaxcecCrPDmP6b2aedr" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="A3lfGahHy9fLtZtjwPISrn" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="484,388,48,19" Id="DcPrKSIIX5kPVNmiNsyizG">
+                  <p:NodeReference LastCategoryFullName="System.Logging" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Logger" />
+                  </p:NodeReference>
+                  <Pin Id="DPD4NnTLcKsM74ihEh8MyS" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="V6Ze9UDfwCSPhsrY3di6L9" Name="Category" Kind="InputPin" />
+                  <Pin Id="RJ5gydZeXWbMip2o01o6x8" Name="Logger" Kind="OutputPin" />
+                </Node>
+                <Pad Id="OD5r8pjr4l0MSiYmFTlHn3" Comment="" Bounds="486,367,51,15" ShowValueBox="true" isIOBox="true" Value="VL.TUIO">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="679,410,72,26" Id="Nby2usIzOZdNYbbHJsRief">
+                  <p:NodeReference LastCategoryFullName="TuioNet.Server.Tuio11Manager" LastDependency="TuioNet.Server.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Tuio11Manager" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="SNHqpt2PXBrPcaRMrdWFqE" Name="Source Name" Kind="InputPin" />
+                  <Pin Id="HpPwnWbSnOhNQarWgNffYb" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="Md5JYEzxZFINmYj9SUtks5" Bounds="567,345" Alignment="Top" />
+              <ControlPoint Id="PdrSeoCrCYiLlCVrjW4lQX" Bounds="601,345" Alignment="Top" />
+              <ControlPoint Id="ACnw5Ai8IO8MqigDZfZQnF" Bounds="636,345" Alignment="Top" />
+              <ControlPoint Id="QI3UTGyk6NzNtQ3jQq9AUl" Bounds="669,345" Alignment="Top" />
+              <ControlPoint Id="EJkz8mWW6xQNZgKkxRagzH" Bounds="532,550" Alignment="Bottom" />
+              <ControlPoint Id="InR2QUj65CCN0j2I2XWgSG" Bounds="690,345" Alignment="Top" />
+            </Node>
+            <ControlPoint Id="ArkA18KwEBbLtE4O8MAF8F" Bounds="510,257" />
+            <ControlPoint Id="EdZ1wYRnEL4MG2kb9883AK" Bounds="591,257" />
+            <ControlPoint Id="KNHP7mlv3AYPAPB2KldEd6" Bounds="690,257" />
+            <ControlPoint Id="EFmfCNWt5IWNQtiZuSTUa9" Bounds="763,257" />
+            <ControlPoint Id="QO6lUqdrGOTQW4fLDNN7Fw" Bounds="532,610" />
+            <Pad Id="NTq0p4i2BbEQT0WwVW2PYz" Comment="" Bounds="715,327,35,15" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <ControlPoint Id="Ka7pnLCIAvkOpPtoKZcQYt" Bounds="808,257" />
+            <ControlPoint Id="HQN6cFku86gP497jDe7cnm" Bounds="870,261" />
+          </Canvas>
+          <Patch Id="FjRZA9Ntg7zPeHMYF4Gjlz" Name="Create" />
+          <Patch Id="BxU1panLHXJMn0bu0TqfTc" Name="Update">
+            <Pin Id="MBeOiGNV4awMbLxr3LWp8u" Name="Tuio Version" Kind="InputPin" />
+            <Pin Id="LlBb1J4wFOyMoyBC3JVZDX" Name="Connection Type" Kind="InputPin" />
+            <Pin Id="HuXhY2T2PkMMa0rwnLI2h0" Name="Ip Address" Kind="InputPin" DefaultValue="127.0.0.1" />
+            <Pin Id="LeHzkKu2iZ6O8CJ8friMsv" Name="Session" Kind="OutputPin" />
+            <Pin Id="F6MK1Raj2DMLUPNig4Jj40" Name="Port" Kind="InputPin" DefaultValue="3333" />
+            <Pin Id="CNPZOAY9VFiNbBqeYUZYq8" Name="Force" Kind="InputPin" />
+            <Pin Id="IPDhWNMOBnmLPMztYf3Bhd" Name="Source" Kind="InputPin" />
+          </Patch>
+          <ProcessDefinition Id="P97opr4J86uM5QbTODRn8Z">
+            <Fragment Id="DQ0DcRi5CrfPe0pgBwjLZn" Patch="FjRZA9Ntg7zPeHMYF4Gjlz" Enabled="true" />
+            <Fragment Id="AINMSYt0zsnNDue6SZSakP" Patch="BxU1panLHXJMn0bu0TqfTc" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="UQ0Riw5VSx2LRfngCRXpjj" Ids="ArkA18KwEBbLtE4O8MAF8F,Md5JYEzxZFINmYj9SUtks5" />
+          <Link Id="ONcmklEBk2GPuoY9Aj63ZE" Ids="MBeOiGNV4awMbLxr3LWp8u,ArkA18KwEBbLtE4O8MAF8F" IsHidden="true" />
+          <Link Id="VjSsjRy14BPPh6haojssvc" Ids="EdZ1wYRnEL4MG2kb9883AK,PdrSeoCrCYiLlCVrjW4lQX" />
+          <Link Id="CxqZYsc3HM6M0dKzzZzDvp" Ids="LlBb1J4wFOyMoyBC3JVZDX,EdZ1wYRnEL4MG2kb9883AK" IsHidden="true" />
+          <Link Id="SvRyFTVi0R9MiKjozEdVRU" Ids="KNHP7mlv3AYPAPB2KldEd6,ACnw5Ai8IO8MqigDZfZQnF" />
+          <Link Id="U7GbezCbeQBNiiYYrtIPm9" Ids="HuXhY2T2PkMMa0rwnLI2h0,KNHP7mlv3AYPAPB2KldEd6" IsHidden="true" />
+          <Link Id="OwpqMEchfrwLedmXIK2sDX" Ids="EFmfCNWt5IWNQtiZuSTUa9,QI3UTGyk6NzNtQ3jQq9AUl" />
+          <Link Id="A0Ty5lmkYlQNGVL6g2Uy6S" Ids="F6MK1Raj2DMLUPNig4Jj40,EFmfCNWt5IWNQtiZuSTUa9" IsHidden="true" />
+          <Link Id="QE4dkHagNT3PTD91hcsTh7" Ids="QO6lUqdrGOTQW4fLDNN7Fw,LeHzkKu2iZ6O8CJ8friMsv" IsHidden="true" />
+          <Link Id="RCu04D6nRMZOSmS5dkckVj" Ids="NTq0p4i2BbEQT0WwVW2PYz,U9QgLlL4LUwPo89cFswz6Q" />
+          <Link Id="VRzQFSChQICOZeV5pxzTBr" Ids="Ka7pnLCIAvkOpPtoKZcQYt,TtNYDZuZpo6N2Ccynxiv9d" />
+          <Link Id="EZL7DCULwwCLLWP3XEVFch" Ids="CNPZOAY9VFiNbBqeYUZYq8,Ka7pnLCIAvkOpPtoKZcQYt" IsHidden="true" />
+          <Link Id="NxovIH9yRZROsUURryyCt3" Ids="OD5r8pjr4l0MSiYmFTlHn3,V6Ze9UDfwCSPhsrY3di6L9" />
+          <Link Id="C9mKS3b2Je7LcRIw0zVWWi" Ids="EJkz8mWW6xQNZgKkxRagzH,QO6lUqdrGOTQW4fLDNN7Fw" />
+          <Link Id="NzG6KKKEs5KNxyZ2w2k0nH" Ids="IPDhWNMOBnmLPMztYf3Bhd,HQN6cFku86gP497jDe7cnm" IsHidden="true" />
+          <Link Id="CeeCgWlUEylLhko2BGpph2" Ids="HQN6cFku86gP497jDe7cnm,InR2QUj65CCN0j2I2XWgSG" />
+          <Link Id="FHoGZXdhIhDOhkfNJQgjD1" Ids="InR2QUj65CCN0j2I2XWgSG,SNHqpt2PXBrPcaRMrdWFqE" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ TuioTransmitter ************************
+
+-->
+      <Node Name="TuioTransmitter" Bounds="-324,311" Id="SOSIVC04KK0NTgLPa0IGSc">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" Name="Class" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <Patch Id="Bh6dVy7icoGNxkHPbghHya">
+          <Canvas Id="BWd2IlAgWjbMskbDfiVVuD" CanvasType="Group">
+            <Pad Id="Aay8I5DLgZILN4MuD1QPqV" SlotId="OT6Kg9KqKOJNE6CfdxDyNa" Bounds="59,441" />
+            <Pad Id="Tub4fDDQFyPO4VW5lbPeZq" SlotId="LxiEk7jXmr1PMm0oixKIcc" Bounds="441,411" />
+            <Pad Id="QNW9WU1mVBVOvAvI7HgNql" SlotId="CHthHVaesysNBprKaUOA4Z" Bounds="317,451" />
+            <ControlPoint Id="ARux1qDUlCnMegALiaXbuy" Bounds="158,352" />
+            <ControlPoint Id="LEpsdqxaZK3NwPSabFG942" Bounds="441,361" />
+            <ControlPoint Id="BTAYRtX1fODM8qzzXig4Cm" Bounds="245,411" />
+            <Pad Id="AV1ZoCwJ0vXML0vaSBsyCI" SlotId="IHseiv3BwWkN2xHEcrrPIz" Bounds="171,643" />
+            <Pad Id="SknNfCsYG6iNlCwgmDCvRz" SlotId="QtOIjyrr6W2OucExpqfC8T" Bounds="514,691" />
+            <Node Bounds="457,480,25,19" Id="TgX55w18ApqQbzPVBS6xLx">
+              <p:NodeReference LastCategoryFullName="TuioNet.Common.TuioConnectionType" LastDependency="TuioNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="TuioConnectionType" />
+                <Choice Kind="OperationCallFlag" Name="=" />
+              </p:NodeReference>
+              <Pin Id="UBo1O5VosbXNPchKJQWRKn" Name="Input" Kind="InputPin" />
+              <Pin Id="CME0GJcobMbPCvK0QtkSR7" Name="Input 2" Kind="InputPin" />
+              <Pin Id="NkLfT8kVqZ9QbSYTKfEFQd" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="T90ob45ipN8NL700M0anUu" Comment="" Bounds="479,460,78,15" ShowValueBox="true" isIOBox="true" Value="Websocket">
+              <p:TypeAnnotation LastCategoryFullName="TuioNet.Common" LastDependency="TuioNet.dll">
+                <Choice Kind="TypeFlag" Name="TuioConnectionType" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="457,550,156,117" Id="JLH2q21pg54LmvjADvmxuL">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="UiqI1UFqaddNg6ucroXTTF" Name="Condition" Kind="InputPin" />
+              <Patch Id="KJgndmnqbgCPgr8Yp18uev" ManuallySortedPins="true">
+                <Patch Id="EIrY1XBTlcZN3lpBFAhKns" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="UppTWJKrmvpNzMM5ntE9Rt" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="512,570,89,67" Id="Rx6dtN9eaDnP5pXkjXOMFa">
+                  <p:NodeReference LastCategoryFullName="TuioNet.Server.WebsocketServer" LastDependency="TuioNet.Server.dll">
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="WebsocketServer" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="DEMzyqPxyBaO4LxsAYDouV" Name="Output" Kind="StateOutputPin" />
+                  <Patch Id="Q8gbbW1hOJUL7jRt5KB576" Name="On Log" ManuallySortedPins="true">
+                    <Pin Id="INaP35b6c5GPIFMMFUI154" Name="Input" Kind="InputPin" />
+                    <ControlPoint Id="Qi7GEs5j0rSPozu8ma10RH" Bounds="526,578" />
+                    <Node Bounds="524,598,65,19" Id="Jv72uwTlYmtPZpEzVzIReg">
+                      <p:NodeReference LastCategoryFullName="System.Logging" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="Category" Name="Logging" NeedsToBeDirectParent="true" />
+                        <Choice Kind="ProcessAppFlag" Name="Log" />
+                      </p:NodeReference>
+                      <Pin Id="Jl4hlHxYK1cOxHHWx2fLHN" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="HhoJgJCv4zDNCDg83yzOGj" Name="Message" Kind="InputPin" />
+                      <Pin Id="JduthxA9UueLE8QI2BVQvA" Name="Log Level" Kind="InputPin" DefaultValue="Debug" />
+                      <Pin Id="Q28KzkWTDuPO6weG1WPf1k" Name="Event Id" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="G2d5zaKYlDbObb5xnXOSKq" Name="Category" Kind="InputPin" />
+                      <Pin Id="AdK7DTedks7QG7fmG26U4I" Name="Exception" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="Hq4QAyImxzTMR2zNtI7yg5" Name="Apply" Kind="InputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+              </Patch>
+              <ControlPoint Id="Jn5udKZVNZaM4frBTWJq46" Bounds="471,556" Alignment="Top" />
+              <ControlPoint Id="UujfboHYs8lLgkvArMfjua" Bounds="514,661" Alignment="Bottom" />
+            </Node>
+            <Node Bounds="469,510,53,26" Id="NzTXEW30tlVQP7x9WLmYrY">
+              <p:NodeReference LastCategoryFullName="TuioNet.Server.UdpServer" LastDependency="TuioNet.Server.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="UdpServer" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="IUEcyw6p8zoLvWxKYCwBVm" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="156,402,25,19" Id="MZmTvWGSajUOBM6JkebrGD">
+              <p:NodeReference LastCategoryFullName="TuioNet.Common.TuioVersion" LastDependency="TuioNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="TuioVersion" />
+                <Choice Kind="OperationCallFlag" Name="=" />
+              </p:NodeReference>
+              <Pin Id="NBsxnAVsirqMGpQ9myMjFQ" Name="Input" Kind="InputPin" />
+              <Pin Id="Fr11Z58wnHTNkMWsS78hNN" Name="Input 2" Kind="InputPin" />
+              <Pin Id="NdDRfawnXp4N0JM5M8J6ni" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="156,487,129,131" Id="CXLuZPjFevKNLXVYdAaQaz">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="Mr56FEf66KbQW6VHveTt10" Name="Condition" Kind="InputPin" />
+              <Patch Id="NriDPRIckUcOPxYgfBiR2s" ManuallySortedPins="true">
+                <Patch Id="E5ElX2meSY5OW9Bxg3cPA3" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="BuZ8NVGPAkHLOs4bqgSsQI" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="178,552,72,26" Id="ETjJmBrRo4NMwRBJjKbBKw">
+                  <p:NodeReference LastCategoryFullName="TuioNet.Server.Tuio20Manager" LastDependency="TuioNet.Server.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Tuio20Manager" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="F1lPYEuupuIP3rgIwdokaX" Name="Source Name" Kind="InputPin" />
+                  <Pin Id="V4PktZkdsZWNciRWb6CBfA" Name="Screen Resolution" Kind="InputPin" />
+                  <Pin Id="VbvW42tncQlOQo2ZD5Ibmp" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="245,510,28,19" Id="DcS3XsBoeJOQDHUnY6FrN4">
+                  <p:NodeReference LastCategoryFullName="System.Unsafe" LastDependency="VL.CoreLib.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="Unsafe" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="As" />
+                    <PinReference Kind="InputPin" Name="Source" ParameterModifier="ref" />
+                  </p:NodeReference>
+                  <Pin Id="E6DsyzcovDsPZMLlU4lgIG" Name="Source" Kind="InputPin" />
+                  <Pin Id="JWzv1I5Yy1hOOsPtAxjM5m" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="AKTYOp6zfzQLoXFHgyrdcm" Bounds="170,493" Alignment="Top" />
+              <ControlPoint Id="JV71xPSxBscNMwq0ApBEbG" Bounds="170,612" Alignment="Bottom" />
+            </Node>
+            <Pad Id="QEIGc7mmb1zQEc5hwdQtey" Comment="" Bounds="184,391,62,15" ShowValueBox="true" isIOBox="true" Value="Tuio20">
+              <p:TypeAnnotation LastCategoryFullName="TuioNet.Common" LastDependency="TuioNet.dll">
+                <Choice Kind="TypeFlag" Name="TuioVersion" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="168,442,72,26" Id="NWZgWg6pSAnOhB9QK0nmLs">
+              <p:NodeReference LastCategoryFullName="TuioNet.Server.Tuio11Manager" LastDependency="TuioNet.Server.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Tuio11Manager" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="CXMJhkPKVEXL4R3RtlDyBz" Name="Source Name" Kind="InputPin" />
+              <Pin Id="I0G5WO0WIutPGGm10RQgok" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="TU1kXjmOhBuNfBAYiJk1uX" Comment="" Bounds="317,490,35,28" ShowValueBox="true" isIOBox="true" Value="1920, 1080">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:precision p:Type="Int32">0</p:precision>
+                <p:stepsize p:Type="Single">1</p:stepsize>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="JUfgdmJLXNMLuI4lsYTZMs" SlotId="IHseiv3BwWkN2xHEcrrPIz" Bounds="-296,570" />
+            <Node Bounds="-298,590,65,26" Id="T6jG0SOXFJlL7jiyTsUHGQ">
+              <p:NodeReference LastCategoryFullName="TuioNet.Server.ITuioManager" LastDependency="TuioNet.Server.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="TuioNet.Server.ITuioManager" />
+                <Choice Kind="OperationCallFlag" Name="Update" />
+              </p:NodeReference>
+              <Pin Id="MrO9rV7hyZmNjC6lFPPZ1O" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BWy70VgHAwDMXhEw78KNI6" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="GaL2JHBgYauLz16trytmH1" SlotId="QtOIjyrr6W2OucExpqfC8T" Bounds="-217,720" />
+            <Node Bounds="-219,730,56,26" Id="Dq1ldqhSs4FMMhL0yMjpqB">
+              <p:NodeReference LastCategoryFullName="TuioNet.Server.ITuioServer" LastDependency="TuioNet.Server.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="TuioNet.Server.ITuioServer" />
+                <Choice Kind="OperationCallFlag" Name="Send" />
+                <PinReference Kind="InputPin" Name="Data">
+                  <p:DataTypeReference p:Type="TypeReference">
+                    <Choice Kind="TypeFlag" Name="Array`1" />
+                    <FullNameCategoryReference ID="System" />
+                    <AssemblyReference ID="System.Runtime.dll" />
+                    <p:TypeArguments>
+                      <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="TypeFlag" Name="Byte" />
+                        <FullNameCategoryReference ID="System" />
+                        <AssemblyReference ID="System.Runtime.dll" />
+                      </TypeReference>
+                    </p:TypeArguments>
+                  </p:DataTypeReference>
+                </PinReference>
+              </p:NodeReference>
+              <Pin Id="Pw0RyqO8vkRLxPCnIcHTNM" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FnyMaEcDRSHNavz6A1PVNi" Name="Data" Kind="InputPin" />
+              <Pin Id="ElTicKwGMjUMn8e58Tp5vR" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="-298,631,75,26" Id="QGfFruoM9fvLsBFv07lbzq">
+              <p:NodeReference LastCategoryFullName="TuioNet.Server.ITuioManager" LastDependency="TuioNet.Server.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="TuioNet.Server.ITuioManager" />
+                <Choice Kind="OperationCallFlag" Name="FrameBundle" />
+              </p:NodeReference>
+              <Pin Id="Pg2qluifwgYPazQ0wzzRd4" Name="Input" Kind="StateInputPin" />
+              <Pin Id="JJQezPM2rCyLZkv9tAO36T" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="SNd78LMSrqdP5ClGurEglp" Name="Frame Bundle" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="-228,671,65,26" Id="G9Pf1P4KjC3NQgYIv5Tj2t">
+              <p:NodeReference LastCategoryFullName="TuioNet.OSC.OSCPacket" LastDependency="TuioNet.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="TuioNet.OSC.OSCPacket" />
+                <Choice Kind="OperationCallFlag" Name="BinaryData" />
+              </p:NodeReference>
+              <Pin Id="HSOK8oQoJWVO7mEI4nhpV1" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DAmaarY8wkVNmZpyRLiNvq" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="J0AEGGRdUhQOCFKSciZWNA" Name="Binary Data" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="Smvhul61qBFN20VsuCwiOW" Name="Create">
+            <Pin Id="J1iQiBik9MINsJQ5b32hFP" Name="TuioVersion" Kind="InputPin" />
+            <Pin Id="CpsQ9XcgCAZN5Qt0ktT34R" Name="SourceName" Kind="InputPin" />
+            <Pin Id="JKq5cMdfnszOcNm0aST1Xs" Name="ConnectionType" Kind="InputPin" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="JaXYOH6fge7PI1GNJMuzGR" IsHidden="true">
+            <Fragment Id="AgshGV648AZOaEo4azpnpv" Patch="Smvhul61qBFN20VsuCwiOW" Enabled="true" />
+            <Fragment Id="FQ1ctGWv5MaOKz5flEqB1P" Patch="BT6DQPpVIbQNVGQf0W2qLj" />
+          </ProcessDefinition>
+          <Slot Id="OT6Kg9KqKOJNE6CfdxDyNa" Name="TuioVersion">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="TuioVersion" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="LxiEk7jXmr1PMm0oixKIcc" Name="ConnectionType">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="TuioConnectionType" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="CHthHVaesysNBprKaUOA4Z" Name="SourceName">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="Bumi3XceVRkOmeTof1J582" Ids="ARux1qDUlCnMegALiaXbuy,Aay8I5DLgZILN4MuD1QPqV" />
+          <Link Id="VHvGGOfUIMsOOI0BODS5C6" Ids="J1iQiBik9MINsJQ5b32hFP,ARux1qDUlCnMegALiaXbuy" IsHidden="true" />
+          <Link Id="K47wKTVfrVVPfdWZohrjsJ" Ids="LEpsdqxaZK3NwPSabFG942,Tub4fDDQFyPO4VW5lbPeZq" />
+          <Link Id="P5jBuHxHvKiPfHgwub2TjG" Ids="JKq5cMdfnszOcNm0aST1Xs,LEpsdqxaZK3NwPSabFG942" IsHidden="true" />
+          <Link Id="N80vPcjAunxLtFvNXs9aFG" Ids="BTAYRtX1fODM8qzzXig4Cm,QNW9WU1mVBVOvAvI7HgNql" />
+          <Link Id="RykxIXKuD3ZMur299OhzFR" Ids="CpsQ9XcgCAZN5Qt0ktT34R,BTAYRtX1fODM8qzzXig4Cm" IsHidden="true" />
+          <Slot Id="IHseiv3BwWkN2xHEcrrPIz" Name="Manager">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="ITuioManager" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="QtOIjyrr6W2OucExpqfC8T" Name="Server">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="ITuioServer" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="Gt3kM4ektDcOhGreDjlHfl" Ids="LEpsdqxaZK3NwPSabFG942,UBo1O5VosbXNPchKJQWRKn" />
+          <Link Id="JZDlOKSoC0OLcD2wlbG8BK" Ids="T90ob45ipN8NL700M0anUu,CME0GJcobMbPCvK0QtkSR7" />
+          <Link Id="CmzyoGNGocBLfbClJASC1j" Ids="NkLfT8kVqZ9QbSYTKfEFQd,UiqI1UFqaddNg6ucroXTTF" />
+          <Link Id="Ta172tTSs8MPOpNWXxSzRY" Ids="Jn5udKZVNZaM4frBTWJq46,UujfboHYs8lLgkvArMfjua" IsFeedback="true" />
+          <Link Id="NvRX1ad4Kz1M5GajlWCFVb" Ids="UujfboHYs8lLgkvArMfjua,SknNfCsYG6iNlCwgmDCvRz" />
+          <Link Id="MIR1aJ7nVbOPtKP98KBXF0" Ids="INaP35b6c5GPIFMMFUI154,Qi7GEs5j0rSPozu8ma10RH" IsHidden="true" />
+          <Link Id="SEMCzwOTgwZN7524ix8IYI" Ids="IUEcyw6p8zoLvWxKYCwBVm,Jn5udKZVNZaM4frBTWJq46" />
+          <Link Id="GHUGxBoDoVIP62TmQz2Z4M" Ids="DEMzyqPxyBaO4LxsAYDouV,UujfboHYs8lLgkvArMfjua" />
+          <Link Id="RbkeJb5NH6YPaop5xZAEBD" Ids="Qi7GEs5j0rSPozu8ma10RH,HhoJgJCv4zDNCDg83yzOGj" />
+          <Link Id="Cp5pxLMf1eFQXXY75RJG9a" Ids="ARux1qDUlCnMegALiaXbuy,NBsxnAVsirqMGpQ9myMjFQ" />
+          <Link Id="UwsPRdtKLB8QVu9IZ2LzOT" Ids="QEIGc7mmb1zQEc5hwdQtey,Fr11Z58wnHTNkMWsS78hNN" />
+          <Link Id="L2AB64DE1BqLJBodtW3Dh2" Ids="NdDRfawnXp4N0JM5M8J6ni,Mr56FEf66KbQW6VHveTt10" />
+          <Link Id="DSQnapXSnkvM90tSaChhok" Ids="BTAYRtX1fODM8qzzXig4Cm,CXMJhkPKVEXL4R3RtlDyBz" />
+          <Link Id="D4nO4GrY3FAQdgtsW1Nwaf" Ids="AKTYOp6zfzQLoXFHgyrdcm,JV71xPSxBscNMwq0ApBEbG" IsFeedback="true" />
+          <Link Id="TCQ5UocODm5OnvllEXxTpa" Ids="I0G5WO0WIutPGGm10RQgok,AKTYOp6zfzQLoXFHgyrdcm" />
+          <Link Id="JTkCh9bkJIBPPIMYzFFiYQ" Ids="BTAYRtX1fODM8qzzXig4Cm,F1lPYEuupuIP3rgIwdokaX" />
+          <Link Id="BI5X0XMCNPmOvaCnNp9YTs" Ids="VbvW42tncQlOQo2ZD5Ibmp,JV71xPSxBscNMwq0ApBEbG" />
+          <Link Id="Ol22YclfS6YQVDKuRC06Pk" Ids="JV71xPSxBscNMwq0ApBEbG,AV1ZoCwJ0vXML0vaSBsyCI" />
+          <Link Id="RHkPQ78lZdfPiDvvcWXiME" Ids="JWzv1I5Yy1hOOsPtAxjM5m,V4PktZkdsZWNciRWb6CBfA" />
+          <Link Id="M64i0pyvCHCQdvec9D2Ort" Ids="TU1kXjmOhBuNfBAYiJk1uX,E6DsyzcovDsPZMLlU4lgIG" />
+          <Patch Id="BT6DQPpVIbQNVGQf0W2qLj" Name="Update" />
+          <Link Id="SRDfi2efFATOIIsBNcRsnn" Ids="JUfgdmJLXNMLuI4lsYTZMs,MrO9rV7hyZmNjC6lFPPZ1O" />
+          <Link Id="N3IvD88HPgAOTI80erGA9l" Ids="GaL2JHBgYauLz16trytmH1,Pw0RyqO8vkRLxPCnIcHTNM" />
+          <Link Id="QyUedsyrlArLlCANBPdoZr" Ids="BWy70VgHAwDMXhEw78KNI6,Pg2qluifwgYPazQ0wzzRd4" />
+          <Link Id="IJ3PszOXaCbMDyTOLzFIoW" Ids="SNd78LMSrqdP5ClGurEglp,HSOK8oQoJWVO7mEI4nhpV1" />
+          <Link Id="VtNwcFQ110gLpxIjRBYe3J" Ids="J0AEGGRdUhQOCFKSciZWNA,FnyMaEcDRSHNavz6A1PVNi" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -4885,4 +5262,5 @@
   <NugetDependency Id="ONW7oAVPeB7M3sEOLYBkSi" Location="System.Numerics.Vectors" Version="4.6.1" />
   <PlatformDependency Id="EupzbW3xiiVMyxpdYEhrWB" Location="./lib/net8.0/TuioNet.Client.dll" />
   <PlatformDependency Id="JYG5adOlrOgOuEYltvZshE" Location="./lib/net8.0/TuioNet.dll" />
+  <PlatformDependency Id="GaxA981GgQFP1UJ21jkuHd" Location="./lib/net8.0/TuioNet.Server.dll" />
 </Document>

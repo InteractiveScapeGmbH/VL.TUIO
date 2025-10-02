@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="LEMRNiUEWRsPsk41gzanIM" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="Rtgi0jn1KoKPuXZEat9nZB" Location="VL.CoreLib" Version="2025.7.0" />
+  <Patch Id="HiJtrZyAaO0Plkp2B0ZkBC">
+    <Canvas Id="TsqasZTWMj8MhY4gFGtKjq" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="BS7krc3xXgGLJLFGWYS6Xz">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Aesy0XHsBhaNvQVVClLUe9">
+        <Canvas Id="KwL2NQHAk54LnbLJymuuS0" CanvasType="Group">
+          <Node Bounds="679,280,157,19" Id="A8TitFPs0ynPteyFthUaS7">
+            <p:NodeReference LastCategoryFullName="TUIO" LastDependency="VL.TUIO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TuioSession" />
+            </p:NodeReference>
+            <Pin Id="CScw06UX4pzPDRiIGcVK1s" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CpuDl4DKV3HMFVXkrr5DOg" Name="Tuio Version" Kind="InputPin" />
+            <Pin Id="B4VdcUsjUFfMCJULAiaMgT" Name="Connection Type" Kind="InputPin" />
+            <Pin Id="He4cLijGYimPUZdqhxH0IF" Name="Ip Address" Kind="InputPin" />
+            <Pin Id="Mit3trcNllFONeV5jBQBBi" Name="Port" Kind="InputPin" />
+            <Pin Id="AAG1frhGoxCL9qZKoblf3c" Name="Force" Kind="InputPin" />
+            <Pin Id="Qfqp8tk7QLSMyXBiDpqFBM" Name="Session" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SmlbKKLxZUcOU1RMqV6g9T" Comment="Tuio Version" Bounds="672,160,62,15" ShowValueBox="true" isIOBox="true" Value="Tuio11">
+            <p:TypeAnnotation LastCategoryFullName="TuioNet.Common" LastDependency="VL.TUIO.vl">
+              <Choice Kind="TypeFlag" Name="TuioVersion" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="StuErGbRZXuOdeiW7GHZ1t" Comment="Connection Type" Bounds="726,190,78,15" ShowValueBox="true" isIOBox="true" Value="Websocket">
+            <p:TypeAnnotation LastCategoryFullName="TuioNet.Common" LastDependency="VL.TUIO.vl">
+              <Choice Kind="TypeFlag" Name="TuioConnectionType" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="DoWBVPlw3btLP7uJK3FROu" Comment="Ip Address" Bounds="757,211,52,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="IeyPQTlp1iVLjud0XAbbPb" Comment="Port" Bounds="771,241,35,15" ShowValueBox="true" isIOBox="true" Value="3333">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="ADEw3p88VF5LoGfXTDfg6g" Comment="Force" Bounds="871,240,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="579,340,76,19" Id="LysrVKuRsPZPOzg5TiS3dR">
+            <p:NodeReference LastCategoryFullName="TUIO" LastDependency="VL.TUIO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="TUIO" />
+              <Choice Kind="ProcessAppFlag" Name="CursorEvents" />
+            </p:NodeReference>
+            <Pin Id="M3pg0xqBeNwMgpiEoWwAA4" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Iy8Sst5isXePeqp674Oeat" Name="Input" Kind="InputPin" />
+            <Pin Id="M9mbUBW4urjNR7pyIOUv7C" Name="Added" Kind="OutputPin" />
+            <Pin Id="BtT41dppm01NXsnsPsS5aB" Name="Updated" Kind="OutputPin" />
+            <Pin Id="S2kn8VNiaRnOtFpueSk3bo" Name="Removed" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="679,340,75,19" Id="Jrj7Hx06s11M51TSZEk0Od">
+            <p:NodeReference LastCategoryFullName="TUIO" LastDependency="VL.TUIO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ObjectEvents" />
+            </p:NodeReference>
+            <Pin Id="F6Ef2y6DCxdOdXl76tcyzz" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NjhLjb1adBuQXu7XPfYxsQ" Name="Input" Kind="InputPin" />
+            <Pin Id="PL1rbHulS9mPErKp4sDa81" Name="Added" Kind="OutputPin" />
+            <Pin Id="LMtRN4PA2PgLs0Kh5ORMsr" Name="Updated" Kind="OutputPin" />
+            <Pin Id="OD21aT8CvBEONa5FUO3tOe" Name="Removed" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="772,340,65,19" Id="MVbARYlI3tuLky0dOvjSvU">
+            <p:NodeReference LastCategoryFullName="TUIO" LastDependency="VL.TUIO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BlobEvents" />
+            </p:NodeReference>
+            <Pin Id="DyWIlkp9eJ4MQcAE21N8o8" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="I4Rk8A1jZj2PrCzXxsC7Ir" Name="Input" Kind="InputPin" />
+            <Pin Id="Jonz4eekEbuNvrlkIE7cpF" Name="Added" Kind="OutputPin" />
+            <Pin Id="LowFXgJ4cX3OyLNEAsbLlM" Name="Updated" Kind="OutputPin" />
+            <Pin Id="Gsnw1lYCQg2LlwqenODBOL" Name="Removed" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="DXSC72ArQigMhCMDVSXuSH" Name="Create" />
+        <Patch Id="O3IMTglpcZJNGTAj2qbBqv" Name="Update" />
+        <ProcessDefinition Id="JdClqZNUJhRNtMaLWSq8qY">
+          <Fragment Id="Fny5UPeEsAzPPr2lME6JG3" Patch="DXSC72ArQigMhCMDVSXuSH" Enabled="true" />
+          <Fragment Id="K4dxtpb9y6GMRokRDGbBxn" Patch="O3IMTglpcZJNGTAj2qbBqv" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="VqU8KASxXsvLPJm68TutqW" Ids="SmlbKKLxZUcOU1RMqV6g9T,CpuDl4DKV3HMFVXkrr5DOg" />
+        <Link Id="VuPMuSCbmI8QBBGvVRPMBI" Ids="StuErGbRZXuOdeiW7GHZ1t,B4VdcUsjUFfMCJULAiaMgT" />
+        <Link Id="VfCWM2sZEQbQdU5UwvKRPO" Ids="DoWBVPlw3btLP7uJK3FROu,He4cLijGYimPUZdqhxH0IF" />
+        <Link Id="LLdWQ6GlsK7N2zLP8jTnDV" Ids="IeyPQTlp1iVLjud0XAbbPb,Mit3trcNllFONeV5jBQBBi" />
+        <Link Id="TzGaAXSYv6GLgU30kngoYJ" Ids="ADEw3p88VF5LoGfXTDfg6g,AAG1frhGoxCL9qZKoblf3c" />
+        <Link Id="TU2CuhrDwnWNpD9USpqVsz" Ids="Qfqp8tk7QLSMyXBiDpqFBM,Iy8Sst5isXePeqp674Oeat" />
+        <Link Id="RWHdqGrg7i3MJiLaJLDQwH" Ids="Qfqp8tk7QLSMyXBiDpqFBM,NjhLjb1adBuQXu7XPfYxsQ" />
+        <Link Id="UwflSVNoFZ3LEqXPsZsz5q" Ids="Qfqp8tk7QLSMyXBiDpqFBM,I4Rk8A1jZj2PrCzXxsC7Ir" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="H7u1N3eYioOM4pgP3fOIwC" Location="VL.TUIO" Version="0.0.0" />
+</Document>
